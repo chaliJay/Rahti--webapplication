@@ -137,22 +137,26 @@ In simple terms, Kubernetes helps organizations manage large numbers of containe
 
 </li>
 
+<h3> 04) List some information security risks when using third party (for example Docker) containers?</h3>
 
+<p>The usage of containers of third parties like Docker containers may carry a number of information
+security issues. First of all, a container may be out of date because it may include outdated software and
+known vulnerabilities that can be exploited by an adversary. Second, there is a chance of getting a
+malicious or compromised image because of the presence of malware or backdoors. Another information
+security issue is the software supply chain risk, in which the adversary may infect dependencies and
+legitimate images before being applied to an organization's use. Bad container configuration, such as
+granting containers extra permissions and using root, may be another information security threat. In
+addition, container runtime and the host operating system may have certain vulnerabilities that may be
+used by the adversary to break out of the container and get into the host. Containers may leak sensitive
+data such as passwords and other credentials because of configuration files, environment variables, and
+logs.</p>
 
-
-
-
-<h3></h3>
-
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+<p>Referances:</p>
 
 <li>
-    <a href=""></a><br>
-    <a href=""></a><br>
-    <a href=""></a><br>
+    <a href="https://docs.docker.com/engine/security">Docker Engine security</a><br>
+    <a href="https://docs.docker.com/scout">Docker Scout</a><br>
+    <a href="https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html">OWASP Cheat Sheet Series</a><br>
 
 </li>
 
